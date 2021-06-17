@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
     function getLocation(){
-        fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=b16d49c2021b4770b4f70583a0ea01f0&fields=country,country_code')
+        fetch('https://ipgeolocation.abstractapi.com/v1/?api_key=d71254acfb3b4dfc81e3b36f6d5d507c')
       .then(function (response) {
         return response.json();
       })
@@ -51,7 +51,7 @@ var midDays;
 var turningPoint;
 function partyDates (){
   var country = localStorage.getItem("Country-code");
-  requestUrl = 'https://calendarific.com/api/v2/holidays?api_key=35103c5d8d12361a3b9ac8b97222182f16d7ea99&country=' + country + '&month=' +month+ '&year=' +year;
+  requestUrl = 'https://calendarific.com/api/v2/holidays?api_key=8b08d7a7e30d1169e5c1b651b29ac46e6322b89b&country=' + country + '&month=' +month+ '&year=' +year;
 
   fetch(requestUrl)
       .then(function (response) {
